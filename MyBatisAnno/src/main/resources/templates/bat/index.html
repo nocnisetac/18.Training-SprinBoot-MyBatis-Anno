@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>User list</title>
+</head>
+<body>
+
+<h3>User List</h3>
+<table cellpadding="2" cellspacing="2" border="1">
+	<tr>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Link</th>
+	</tr>
+	<tr th:each="user : ${users}">
+		<td th:text="${user.id}">  </td>
+		<td th:text="${user.name}"> </td>
+		<td th:text="${user.email}"> </td>
+		<td> <a th:href="@{'/bat/detail/' + ${user.id}}">Description</a> </td>
+	</tr>
+</table>
+</body>
+</html>
