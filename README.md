@@ -1,3 +1,3 @@
 ### Spring Boot
-### MyBatis
+### MyBatis 
 Mala web aplikacija koja koristi MyBatis, konfigurisan pomoću anotacija
